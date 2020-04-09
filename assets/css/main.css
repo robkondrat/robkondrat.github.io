@@ -3825,12 +3825,9 @@ input, select, textarea {
 		text-align: center;
 	}
 
-  #bidcast-header {
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bidcast-logo.png");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bidcast-logo.png");
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bidcast-logo.png");
-    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bidcast-logo.png");
-  }
+
+
+
 
 		#main > header h2 {
 			font-size: 1.75em;
