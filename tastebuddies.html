@@ -40,32 +40,45 @@
                 </nav>
             </header>
             <!-- Main -->
-            <article id="main-magnitude">
+            <article id="main-tastebuddies">
                 <header>
                     <h2>Tastebuddies</h2>
-                    <p>Track Covid Data</p>
+                    <p>Swipe Through Menu Items to Find Restaurants</p>
                 </header>
                 <section class="wrapper style5">
                     <div class="inner">
-                        <h3>Expanding My Skillset</h3>
-                        <p>Since finishing a coding bootcamp earlier in the year (and relentlessly job hunting during a pandemic) I've been devoting my time to learning new languages and frameworks that would expand my skillset and make me a stronger programmer. The hours spent on tutorials and documentations paid off on this project, especially when it came to React, but there were still a ton of learning opportunities in the project itself.</p>
+                        
                         <a href="https://magnitude-app.netlify.com">
-                            <img src="images/magnitude-graph.png" alt="magnitude-graph" class="image fit">
+                            <img src="images/tb-swipeleft.png" alt="tastebuddies-swipeleft" class="image-left fit">
                         </a>
-                        <h4>Mob Programming</h4>
-                        <p>I partnered up with a small group of colleagues from Actualize to tackle this project. We each brought different skills to the table and contributed time to working together. Staying organized and consistently blocking off time to get together helped keep us on schedule for when we wanted this project completed by, which was just after a few weeks. These are the types of experiences I know will be useful when working professionally on a team.</p>
+                        <h3>Overview</h3>
+                        <p>Users looking for restaurant recommendations begin by selecting from a list of cuisines they might be interested in. Based off of their selections, the user is presented with images of menu items that they can swipe right or left on depending on if they are interested in the food their shown. Once the user swipes right, they are shown more information on the restaurant that offers that menu item, including their website, location, and other menu items they offer.</p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="inner">
+                        <div>
+                            <h3>Swiping Components</h3>
+                            <p>Multiple components in Vue were implemented to handle the logic around what the user swipes on, how to remove items on 'swipe lefts', as well as how to successfully pass data on a 'swipe right'.</p>
+                        </div>
+
                         <a href="https://magnitude-app.netlify.com">
-                            <img src="images/magnitude-gridmap.png" alt="magnitude-graph" class="image fit">
+                            <img src="images/tb-swiperight.png" alt="tb-swiperight" class="image-right fit">
                         </a>
+                        <h3>Future Releases</h3>
+                        <p>User authentication is already set up, and future releases will feature a more elaborate restaurant recommendation process based on user submitted ingredient preferences. The flow of the site would also change from one immediate restaurant recommendation to a collection based on what the user swiped right on. The potential for in-app ordering rather than redirecting to the restaurant's website is also worth implementing.</p>
+
 
                         <!-- <a href="https://magnitude-app.netlify.com">
                             <img src="images/magnitude-logo.png" alt="magnitude-graph" class="image fit">
                         </a> -->
-
+                        <h4>Tools</h4>
+                        <p><b>Postgres</b> database, <b>Node.js</b> backend, <b>Vue.js</b> frontend.</p>
                         <hr />
 
-                        <h4>Tools</h4>
-                        <p>The app is built in <b>React</b> and leverages <b>Chart.js</b> to visualize the data pulled from a public COVID-19 data API.</p>
+
 
                         <h4>Links</h4>
                         <p><a href="https://magnitude-app/netlify.com/" target="_blank">Magnitude Website</a></p>
@@ -95,5 +108,26 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-	</body>
+    </body>
+    <style>
+        .image-left {
+            width: 40%;
+            float: left;
+            margin: 20px;
+
+        }
+        .image-right {
+            width: 40%;
+            float: right;
+            margin: 20px;
+        }
+        @media only screen and (max-width: 736px) {
+            .fit {
+                width: 300px;
+                display: block;
+                margin: 0 auto;
+                margin-left: 8px;
+            }
+        }
+    </style>
 </html>
